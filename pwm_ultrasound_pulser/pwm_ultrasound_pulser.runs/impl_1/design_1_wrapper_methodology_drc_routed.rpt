@@ -1,0 +1,152 @@
+Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2.2 (win64) Build 3788238 Tue Feb 21 20:00:34 MST 2023
+| Date         : Tue May  9 15:16:59 2023
+| Host         : DESKTOP-URRCKQR running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+| Design       : design_1_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 23
++-----------+------------------+----------------------------------------------------+------------+
+| Rule      | Severity         | Description                                        | Violations |
++-----------+------------------+----------------------------------------------------+------------+
+| TIMING-4  | Critical Warning | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin          | 1          |
+| TIMING-16 | Warning          | Large setup violation                              | 21         |
++-----------+------------------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-4#1 Critical Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock design_1_i/clk_wiz_peripherals/inst/clk_in1 is defined downstream of clock clk_fpga_0 and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock design_1_i/clk_wiz_peripherals/inst/clk_in1 is created on an inappropriate internal pin design_1_i/clk_wiz_peripherals/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.511 ns between design_1_i/axi_gpio_train_length/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/pulse_o_reg/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.740 ns between design_1_i/axi_gpio_start_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/enable_o_reg/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.186 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/FSM_sequential_state_reg[2]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.192 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/FSM_sequential_state_reg[0]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.221 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[15]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -2.233 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[7]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -2.270 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[14]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -2.277 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[6]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -2.287 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/FSM_sequential_state_reg[1]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -2.345 ns between design_1_i/axi_gpio_start_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[1]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -2.361 ns between design_1_i/axi_gpio_start_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[0]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -2.383 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[13]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -2.387 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[3]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -2.412 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[11]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -2.433 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[12]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -2.435 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[2]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -2.456 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[10]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -2.497 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[9]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -2.504 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[5]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -2.514 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[8]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -2.520 ns between design_1_i/axi_gpio_gate_delay/U0/gpio_core_1/Not_Dual.gpio_Data_Out_reg[13]/C (clocked by CLK_320MHZ_design_1_clk_wiz_0_0) and design_1_i/hier_ultrasound_pulser/signal_controller/U0/counter_reg[4]/D (clocked by CLK_320MHZ_design_1_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+

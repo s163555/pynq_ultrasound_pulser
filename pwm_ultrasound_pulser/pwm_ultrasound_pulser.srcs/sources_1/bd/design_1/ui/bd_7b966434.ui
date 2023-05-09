@@ -1,0 +1,49 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.6245",
+   "Default View_TopLeft":"279,-8",
+   "ExpandedHierarchyInLayout":"",
+   "No Loops_ScaleFactor":"2.0",
+   "No Loops_TopLeft":"-358,-163",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_n_reset_i -pg 1 -lvl 0 -x -10 -y 40 -defaultsOSRD
+preplace port port-id_clk_i -pg 1 -lvl 0 -x -10 -y 70 -defaultsOSRD
+preplace port port-id_PWM -pg 1 -lvl 4 -x 830 -y 60 -defaultsOSRD
+preplace port port-id_PWMN -pg 1 -lvl 4 -x 830 -y 90 -defaultsOSRD
+preplace port port-id_prime_i -pg 1 -lvl 0 -x -10 -y 280 -defaultsOSRD
+preplace port port-id_fire_i -pg 1 -lvl 0 -x -10 -y 320 -defaultsOSRD
+preplace port port-id_PRF -pg 1 -lvl 4 -x 830 -y 190 -defaultsOSRD
+preplace port port-id_PULSE -pg 1 -lvl 4 -x 830 -y 220 -defaultsOSRD
+preplace port port-id_GATE -pg 1 -lvl 4 -x 830 -y 250 -defaultsOSRD
+preplace portBus duty_i -pg 1 -lvl 0 -x -10 -y -60 -defaultsOSRD
+preplace portBus band_i -pg 1 -lvl 0 -x -10 -y -20 -defaultsOSRD
+preplace portBus start_delay_i -pg 1 -lvl 0 -x -10 -y 190 -defaultsOSRD
+preplace portBus train_length_i -pg 1 -lvl 0 -x -10 -y 220 -defaultsOSRD
+preplace portBus LEDs -pg 1 -lvl 4 -x 830 -y 280 -defaultsOSRD
+preplace portBus gate_delay_i -pg 1 -lvl 0 -x -10 -y 250 -defaultsOSRD
+preplace inst signal_controller -pg 1 -lvl 1 -x 220 -y 230 -defaultsOSRD
+preplace inst Pwm_pulser -pg 1 -lvl 2 -x 510 -y 80 -swap {0 4 1 2 3 5 6} -defaultsOSRD
+preplace inst invert_top_0 -pg 1 -lvl 3 -x 720 -y 90 -defaultsOSRD
+preplace netloc M00_ARESETN_1 1 0 2 10 40 NJ
+preplace netloc Pwm_0_pwmA_o 1 2 2 630J 30 800
+preplace netloc axi_gpio_band_gpio_io_o 1 0 2 NJ -20 370J
+preplace netloc axi_gpio_duty_gpio_io_o 1 0 2 NJ -60 380J
+preplace netloc axi_gpio_start_delay_gpio_io_o 1 0 1 10J 190n
+preplace netloc axi_gpio_train_length_gpio_io_o 1 0 1 10J 220n
+preplace netloc clk_wiz_320MHZ_CLK_320MHZ 1 0 2 20 60 NJ
+preplace netloc gate_delay_i_1 1 0 1 N 250
+preplace netloc signal_controller_0_enable_o 1 1 1 380 120n
+preplace netloc signal_controller_0_gate_o 1 1 3 NJ 250 NJ 250 N
+preplace netloc signal_controller_0_leds_o 1 1 3 NJ 270 NJ 270 800
+preplace netloc signal_controller_0_prf_o 1 1 3 NJ 190 NJ 190 N
+preplace netloc signal_controller_0_pulse_o 1 1 3 NJ 230 NJ 230 800
+preplace netloc xlslice_prime_Dout 1 0 1 20J 270n
+preplace netloc xlslice_start_Dout 1 0 1 10J 290n
+preplace netloc Pwm_pulser_pwmB_o 1 2 1 N 90
+preplace netloc invert_top_0_B 1 3 1 N 90
+levelinfo -pg 1 -10 220 510 720 830
+pagesize -pg 1 -db -bbox -sgen -190 -160 950 380
+"
+}
+0
